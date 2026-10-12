@@ -1,5 +1,5 @@
 ; ---------------------------------------------------------------------------
-; Sprite mappings - Sonic on the title screen
+; Sprite mappings - Sonic Afterlife title screen
 ; ---------------------------------------------------------------------------
 Map_TSon_internal:	mappingsTable
 	mappingsTableEntry.w	.appear0
