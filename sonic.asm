@@ -2257,7 +2257,7 @@ LevSel_Level_SS:
 		bne.s	LevSel_Level				; if not, branch
 		move.b	#id_Special,(v_gamemode).w		; set screen mode to $10 (Special Stage)
 		clr.w	(v_zone_act).w				; clear level
-		move.b	#3,(v_lives).w				; set lives to 3
+		move.b	#5,(v_lives).w				; set lives to 5
 		moveq	#0,d0					; set d0 to 0
 		move.w	d0,(v_rings).w				; clear rings
 		move.l	d0,(v_time).w				; clear time
@@ -2274,7 +2274,7 @@ LevSel_Level:
 
 PlayLevel:
 		move.b	#id_Level,(v_gamemode).w		; set screen mode to $0C (level)
-		move.b	#3,(v_lives).w				; set lives to 3
+		move.b	#5,(v_lives).w				; set lives to 5
 		moveq	#0,d0					; set d0 to 0
 		move.w	d0,(v_rings).w				; clear rings
 		move.l	d0,(v_time).w				; clear time
@@ -2419,7 +2419,7 @@ GotoDemo_NoReset:
 
 ; Demo_Level:
 GotoDemo_NotSS:
-		move.b	#3,(v_lives).w				; set lives to 3
+		move.b	#5,(v_lives).w				; set lives to 5
 		moveq	#0,d0					; clear d0
 		move.w	d0,(v_rings).w				; clear rings
 		move.l	d0,(v_time).w				; clear time
@@ -3537,7 +3537,7 @@ Cont_NoCountdown:
 
 Cont_GotoLevel:
 		move.b	#id_Level,(v_gamemode).w		; set screen mode to $0C (level)
-		move.b	#3,(v_lives).w				; set lives to 3
+		move.b	#5,(v_lives).w				; set lives to 5
 		moveq	#0,d0					; clear d0
 		move.w	d0,(v_rings).w				; clear rings
 		move.l	d0,(v_time).w				; clear time
@@ -3917,7 +3917,7 @@ EndingDemoLoad:
 		move.w	#$8001,(f_demo).w 			; set demo mode to its credits/ending variant
 		move.b	#id_Demo,(v_gamemode).w			; set game mode to demo (activates once credits page has finished)
 
-		move.b	#3,(v_lives).w				; set lives to 3
+		move.b	#5,(v_lives).w				; set lives to 5
 		moveq	#0,d0					; set d0 to 0
 		move.w	d0,(v_rings).w				; clear rings
 		move.l	d0,(v_time).w				; clear time
